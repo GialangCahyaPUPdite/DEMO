@@ -1,5 +1,9 @@
 <div align="center">
   <img src="img/logo.png" alt="EMAS Corp Logo" width="300">
+  <br><br>
+  <a href="https://gialangcahyapupdite.github.io/DEMO/">
+    <img src="https://img.shields.io/badge/View_Live_Demo-2563EB?style=for-the-badge&logo=github&logoColor=white" alt="View Live Demo">
+  </a>
 </div>
 
 <br>
@@ -8,7 +12,7 @@
 
 Website company profile untuk **PT Era Mulia Abadi Sejahtera (EMAS Corp)** yang dirancang dengan orientasi tampilan premium, profesional, responsif, dan interaktif.
 
-## 🚀 Bahasa Pemrograman & Teknologi yang Digunakan
+##  Bahasa Pemrograman & Teknologi yang Digunakan
 
 Proyek ini murni berbasis **Frontend (Client-Side)** dan dibangun tanpa memerlukan *build-tools* yang kompleks sehingga mudah dikelola dan dimodifikasi:
 
@@ -25,11 +29,11 @@ Proyek ini murni berbasis **Frontend (Client-Side)** dan dibangun tanpa memerluk
 
 ---
 
-## 🎨 Aset Lainnya
+##  Aset Lainnya
 *   **Google Fonts**: Menggunakan tipografi *Montserrat* (untuk judul) dan *Inter* (untuk paragraf teks).
 *   **Material Symbols Outlined**: Paket ikon modern dari Google untuk seluruh ikonografi website.
 
-## 📂 Struktur Direktori Proyek
+##  Struktur Direktori Proyek
 
 ```text
 /
@@ -42,7 +46,7 @@ Proyek ini murni berbasis **Frontend (Client-Side)** dan dibangun tanpa memerluk
 └── index.html               # File utama untuk memuat kerangka website
 ```
 
-## 🛠️ Cara Menjalankan Secara Lokal
+##  Cara Menjalankan Secara Lokal
 
 Proyek ini siap pakai (*Plug & Play*). 
 1. *Clone* atau *Download* repository ini ke komputer Anda.
@@ -53,7 +57,7 @@ Tidak memerlukan instalasi Node.js, PHP, atau konfigurasi *Localhost Server*.
 
 ---
 
-## ✨ Fitur-Fitur Utama
+##  Fitur-Fitur Utama
 
 Website ini telah dilengkapi dengan berbagai fitur interaktif dan visual yang dirancang untuk meningkatkan pengalaman pengguna (User Experience):
 
