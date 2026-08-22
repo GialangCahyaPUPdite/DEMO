@@ -21,7 +21,7 @@ Proyek ini murni berbasis **Frontend (Client-Side)** dan dibangun tanpa memerluk
 *   **CSS3 & Tailwind CSS (via CDN)**
     Menggunakan pendekatan kerangka kerja *utility-first* Tailwind CSS untuk memastikan tampilan yang estetik, konsisten, dan responsif (*Mobile, Tablet, Desktop*). Termasuk implementasi efek *glassmorphism*, bayangan, dan transisi halus.
 *   **Vanilla JavaScript (ES6)**
-    Digunakan untuk mengatur interaktivitas halaman secara murni (tanpa jQuery). Fungsionalitas JS meliputi:
+    Digunakan untuk mengatur interaktivitas halaman secara murni. Fungsionalitas JS meliputi:
     *   *Intersection Observer* untuk animasi transisi *fade-in* saat pengguna menggulir halaman.
     *   Sistem pergeseran *Slideshow / Carousel* untuk bagian "Business Insights".
     *   Efek cahaya dinamis (*Mouse Follower*) yang bereaksi mengikuti kursor pengguna.
@@ -29,55 +29,52 @@ Proyek ini murni berbasis **Frontend (Client-Side)** dan dibangun tanpa memerluk
 
 ---
 
-## Aset Lainnya
-*   **Google Fonts**: Menggunakan tipografi *Montserrat* (ekstrabold & dinamis untuk judul) dan *Inter* (untuk keterbacaan paragraf teks).
-*   **Material Symbols Outlined**: Paket ikon modern dari Google untuk melengkapi seluruh elemen visual dan interaktif website.
-
 ## Struktur Direktori Proyek
 
 ```text
 /
 ├── css/
 │   └── style.css            # Pengaturan CSS kustom, interaksi kursor, dan animasi keyframes
-├── img/                     # Berisi semua gambar aset lokal (logo, profil owner, dsb.)
+├── img/                     # Berisi semua gambar aset lokal (logo, galeri, dsb.)
 ├── js/
 │   ├── main.js              # Script logika interaksi, carousel, observer, dan efek mouse
 │   └── tailwind-config.js   # Konfigurasi kustom tema, warna emas/navy, dan font Tailwind
-└── index.html               # File utama untuk memuat kerangka halaman website
+├── index.html               # File utama untuk memuat kerangka halaman website utama
+└── galeri.html              # Halaman Galeri khusus (Dikelompokkan berdasarkan Unit Bisnis)
 ```
 
 ## Cara Menjalankan Secara Lokal
 
 Proyek ini siap pakai (*Plug & Play*). 
 1. *Clone* atau unduh (*Download*) repository ini ke komputer Anda.
-2. Buka folder proyek, lalu klik ganda (*double-click*) pada file `index.html`.
+2. Buka folder proyek, lalu klik ganda (*double-click*) pada file `index.html` atau `galeri.html`.
 3. Website akan terbuka langsung melalui browser (Google Chrome, Firefox, Safari, dsb.) dengan seluruh fitur dan animasi yang berfungsi penuh. 
 
 Tidak memerlukan instalasi Node.js, server PHP, atau konfigurasi *Localhost* apa pun.
 
 ---
 
-## Fitur-Fitur Utama & Pembaruan (Optimasi)
+## Fitur-Fitur Utama & Pembaruan Terbaru (Update)
 
 Website ini telah dioptimalkan secara komprehensif dengan berbagai fitur interaktif untuk memanjakan mata pengunjung (User Experience yang maksimal):
 
 1. **Responsive Design (Desain Adaptif Penuh)**
-   Tata letak (*layout*) otomatis menyesuaikan secara sempurna dengan ukuran layar apa pun. Dari layar *Smartphone*, Tablet, hingga monitor lebar Desktop, seluruh elemen akan tersusun secara rapi dan proporsional.
+   Tata letak (*layout*) otomatis menyesuaikan secara sempurna dengan ukuran layar apa pun. Dari layar *Smartphone*, Tablet, hingga monitor lebar Desktop.
    
-2. **Interactive Timeline ("Our Journey")**
-   Bagian sejarah perusahaan ditampilkan dalam bentuk *timeline* yang sangat interaktif. Terdapat *Hover Effects* di mana titik sejarah akan menyala (*glow*), membesar, warna teks berubah, dan kartu akan bergeser mulus (animasi pop-up) ketika kursor diarahkan.
+2. **Halaman Galeri Terstruktur (Bento Grid)**
+   Terdapat halaman terpisah khusus galeri (`galeri.html`) yang dikelompokkan dengan sangat rapi ke dalam 5 Pilar Bisnis Utama (Food, Fashion, Financial, Fun & Lifestyle, Property) dengan tata letak *Bento Grid* yang sangat mewah.
 
-3. **Dynamic Business Insights (Quotes Carousel)**
-   Bagian interaktif yang menampilkan kompilasi nilai-nilai dan filosofi bisnis dari *Founder* (Coach Ridwan Abadi). Komponen ini bergeser otomatis (*auto-slide*) secara cerdas menyesuaikan ukuran layar, serta memiliki efek kartu melayang dengan bayangan saat disentuh kursor.
+3. **"Our Principles" & "Our Impact" Interactive Sections**
+   Dua bagian pilar utama perusahaan yang dilengkapi dengan efek interaktif *Hover* (Pantulan/Jump). Saat kursor diarahkan, elemen akan terangkat, memunculkan bayangan (*shadow-xl*), dan warnanya akan berganti menjadi Biru Gelap/Emas eksklusif khas EMAS Corp.
 
-4. **Rich Micro-Animations & Hover States**
-   Setiap kartu "Unit Bisnis" dan tombol pada website memiliki efek *micro-animations*. Elemen akan melayang terangkat (*translate-y*), bayangan semakin dalam (*shadow-xl*), dan garis pinggir (*border*) berubah menjadi warna tema (emas/biru) untuk memberikan respons visual yang memuaskan.
+4. **Dynamic Business Insights (Quotes Carousel)**
+   Bagian interaktif yang menampilkan kompilasi kebijaksanaan (*Wisdom from The Founder*). Komponen ini bergeser otomatis (*auto-slide*) secara cerdas menyesuaikan ukuran layar.
 
-5. **Interactive Mouse Follower**
-   Latar belakang ruang utama memiliki efek pendaran cahaya (*radial glow*) keemasan halus yang bereaksi secara '*real-time*' mengikuti posisi pergerakan kursor mouse pengunjung.
+5. **Rich Micro-Animations & Hover States**
+   Setiap kartu "Unit Bisnis" dan tombol pada website memiliki efek *micro-animations*. Elemen akan melayang terangkat (*translate-y*), bayangan semakin dalam, dan warna tema merespons interaksi kursor.
 
-6. **Animated Count-up Statistics**
-   Bagian metrik kesuksesan perusahaan (Pencapaian) akan melakukan animasi penghitungan angka dinamis (dari 0 ke angka aktual) secara cepat tepat pada saat bagian tersebut terlihat di layar ketika men-*scroll*.
+6. **Integrasi Peta Dinamis (Google Maps)**
+   Bagian Hubungi Kami ("Let's Build Together") dilengkapi dengan peta interaktif (*iframe* Google Maps) untuk memudahkan pengunjung melacak lokasi perusahaan dengan akurat.
 
-7. **Scroll Fade-In Animation**
-   Semua elemen konten (teks, kartu, dan gambar) dilengkapi efek muncul perlahan dari bawah (*fade-in-up*) menggunakan *Intersection Observer*, memunculkan elemen secara sinematik setiap kali pengunjung menggulir (*scroll*) halaman.
+7. **Animated Count-up Statistics**
+   Bagian metrik kesuksesan perusahaan (Pencapaian) akan melakukan animasi penghitungan angka dinamis (dari 0 ke angka aktual) secara tepat pada saat bagian tersebut masuk ke dalam layar pandang.
