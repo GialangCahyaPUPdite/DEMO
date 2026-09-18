@@ -66,61 +66,8 @@
     <!-- Career Grid -->
     <section class="py-section-padding-lg bg-white" id="career-page">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Job 1 -->
-                <div
-                    class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 flex flex-col overflow-hidden fade-in-up hover:shadow-xl transition-all duration-300">
-                    <img src="https://picsum.photos/600/400?random=1" alt="Flyer Rekrutmen 1"
-                        class="w-full h-48 object-cover">
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="font-headline-md text-xl text-[#122338] font-bold mb-2">Digital Marketing Specialist
-                        </h3>
-                        <p class="font-body-md text-sm text-on-surface-variant flex-grow mb-6">Kami mencari kandidat
-                            yang kreatif dan berpengalaman dalam mengelola kampanye digital serta social media
-                            management.</p>
-                        <div class="flex gap-3 mt-auto">
-                            <a href="#" onclick="event.preventDefault(); openApplyModal('Digital Marketing Specialist')"
-                                class="flex-1 text-center py-2.5 bg-primary-container text-white font-label-caps text-sm rounded-DEFAULT hover:bg-primary transition-colors">Apply
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Job 2 -->
-                <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 flex flex-col overflow-hidden fade-in-up hover:shadow-xl transition-all duration-300"
-                    style="transition-delay: 100ms;">
-                    <img src="https://picsum.photos/600/400?random=2" alt="Flyer Rekrutmen 2"
-                        class="w-full h-48 object-cover">
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="font-headline-md text-xl text-[#122338] font-bold mb-2">Graphic Designer</h3>
-                        <p class="font-body-md text-sm text-on-surface-variant flex-grow mb-6">Bergabunglah dengan tim
-                            kreatif kami! Dicari desainer grafis dengan kemampuan visual storytelling yang kuat dan
-                            inovatif.</p>
-                        <div class="flex gap-3 mt-auto">
-                            <a href="#" onclick="event.preventDefault(); openApplyModal('Graphic Designer')"
-                                class="flex-1 text-center py-2.5 bg-primary-container text-white font-label-caps text-sm rounded-DEFAULT hover:bg-primary transition-colors">Apply
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Job 3 -->
-                <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 flex flex-col overflow-hidden fade-in-up hover:shadow-xl transition-all duration-300"
-                    style="transition-delay: 200ms;">
-                    <img src="https://picsum.photos/600/400?random=3" alt="Flyer Rekrutmen 3"
-                        class="w-full h-48 object-cover">
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="font-headline-md text-xl text-[#122338] font-bold mb-2">Business Development</h3>
-                        <p class="font-body-md text-sm text-on-surface-variant flex-grow mb-6">Dicari individu strategis
-                            untuk mengembangkan peluang bisnis baru, membangun kemitraan, dan mencapai target
-                            pertumbuhan perusahaan.</p>
-                        <div class="flex gap-3 mt-auto">
-                            <a href="#" onclick="event.preventDefault(); openApplyModal('Business Development')"
-                                class="flex-1 text-center py-2.5 bg-primary-container text-white font-label-caps text-sm rounded-DEFAULT hover:bg-primary transition-colors">Apply
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
+            <div id="career-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Jobs will be rendered here dynamically via JS -->
             </div>
         </div>
     </section>
@@ -181,7 +128,7 @@
                 </p>
                 <div class="flex items-center gap-6">
                     <a class="text-surface-variant/60 hover:text-primary-fixed transition-colors font-body-sm text-body-sm"
-                        href="#">Privacy Policy</a>
+                        href="login.html">Privacy Policy</a>
                     <a class="text-surface-variant/60 hover:text-primary-fixed transition-colors font-body-sm text-body-sm"
                         href="#">Terms of Service</a>
                 </div>
@@ -353,6 +300,8 @@
             }
         });
     </script>
+    <script src="js/main.js"></script>
+    <script src="js/career.js"></script>
 </body>
 
 </html>
