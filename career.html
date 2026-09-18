@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Career - EMAS Corp</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@300;400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body
+    class="bg-surface text-on-surface font-body-md overflow-x-hidden selection:bg-primary-container selection:text-white">
+    <!-- Interactive Mouse Follower -->
+    <div class="mouse-follower"></div>
+
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface/90 dark:bg-on-surface/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm transition-all duration-200 ease-in-out">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-gutter h-20">
+            <a class="flex items-center gap-2 hover:opacity-80 transition-opacity" href="index.html">
+                <img alt="EMAS Corp Logo" class="h-10 w-auto" src="img/logo.png" />
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="index.html#about">About Us</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="index.html#visi-misi">Visi &amp; Misi</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="index.html#unit-bisnis">Unit Bisnis</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="galeri.html">Galeri</a>
+                <a class="font-label-caps text-label-caps text-primary font-bold border-b-2 border-primary pb-1"
+                    href="career.html">Career</a>
+            </div>
+            <a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary-container text-white font-label-caps text-label-caps rounded-DEFAULT hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+                href="index.html#contact">
+                Contact Us
+            </a>
+            <button class="md:hidden text-on-surface p-2">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-surface-container-lowest border-b border-outline-variant/30 text-center">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter fade-in-up">
+            <span class="font-bold text-sm text-primary-container mb-4 block uppercase tracking-[0.2em]">Bergabunglah
+                Bersama Kami</span>
+            <h1 class="font-extrabold text-4xl md:text-5xl text-[#122338] mb-6 leading-tight tracking-tight">Karir &
+                Peluang</h1>
+            <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Perusahaan ini sangat aktif membuka
+                lowongan pekerjaan dan memiliki basis operasional yang besar di wilayah Jawa Timur, khususnya di kota
+                Batu dan Malang.</p>
+        </div>
+    </section>
+
+    <!-- Career Grid -->
+    <section class="py-section-padding-lg bg-white" id="career-page">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Job 1 -->
+                <div
+                    class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 flex flex-col overflow-hidden fade-in-up hover:shadow-xl transition-all duration-300">
+                    <img src="https://picsum.photos/600/400?random=1" alt="Flyer Rekrutmen 1"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-headline-md text-xl text-[#122338] font-bold mb-2">Digital Marketing Specialist
+                        </h3>
+                        <p class="font-body-md text-sm text-on-surface-variant flex-grow mb-6">Kami mencari kandidat
+                            yang kreatif dan berpengalaman dalam mengelola kampanye digital serta social media
+                            management.</p>
+                        <div class="flex gap-3 mt-auto">
+                            <a href="#" onclick="event.preventDefault(); openApplyModal('Digital Marketing Specialist')"
+                                class="flex-1 text-center py-2.5 bg-primary-container text-white font-label-caps text-sm rounded-DEFAULT hover:bg-primary transition-colors">Apply
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 flex flex-col overflow-hidden fade-in-up hover:shadow-xl transition-all duration-300"
+                    style="transition-delay: 100ms;">
+                    <img src="https://picsum.photos/600/400?random=2" alt="Flyer Rekrutmen 2"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-headline-md text-xl text-[#122338] font-bold mb-2">Graphic Designer</h3>
+                        <p class="font-body-md text-sm text-on-surface-variant flex-grow mb-6">Bergabunglah dengan tim
+                            kreatif kami! Dicari desainer grafis dengan kemampuan visual storytelling yang kuat dan
+                            inovatif.</p>
+                        <div class="flex gap-3 mt-auto">
+                            <a href="#" onclick="event.preventDefault(); openApplyModal('Graphic Designer')"
+                                class="flex-1 text-center py-2.5 bg-primary-container text-white font-label-caps text-sm rounded-DEFAULT hover:bg-primary transition-colors">Apply
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 flex flex-col overflow-hidden fade-in-up hover:shadow-xl transition-all duration-300"
+                    style="transition-delay: 200ms;">
+                    <img src="https://picsum.photos/600/400?random=3" alt="Flyer Rekrutmen 3"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-headline-md text-xl text-[#122338] font-bold mb-2">Business Development</h3>
+                        <p class="font-body-md text-sm text-on-surface-variant flex-grow mb-6">Dicari individu strategis
+                            untuk mengembangkan peluang bisnis baru, membangun kemitraan, dan mencapai target
+                            pertumbuhan perusahaan.</p>
+                        <div class="flex gap-3 mt-auto">
+                            <a href="#" onclick="event.preventDefault(); openApplyModal('Business Development')"
+                                class="flex-1 text-center py-2.5 bg-primary-container text-white font-label-caps text-sm rounded-DEFAULT hover:bg-primary transition-colors">Apply
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-on-background text-on-primary w-full pt-16 pb-6">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Logo & About -->
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <img alt="EMAS Corp Logo" class="h-10 w-auto brightness-0 invert" src="img/logo.png" />
+                    </div>
+                    <p class="font-body-md text-body-md text-surface-variant/80 mb-6">
+                        Membangun Peradaban Sukses dan Berkah melalui inovasi bisnis yang berkelanjutan dan bermanfaat
+                        bagi umat.
+                    </p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-label-caps text-label-caps text-primary-fixed font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 font-body-md text-body-md text-surface-variant/80">
+                        <li><a class="hover:text-primary-fixed transition-colors" href="index.html#about">Tentang
+                                Kami</a></li>
+                        <li><a class="hover:text-primary-fixed transition-colors" href="index.html#visi-misi">Visi &amp;
+                                Misi</a></li>
+                        <li><a class="hover:text-primary-fixed transition-colors" href="career.html">Career</a></li>
+                    </ul>
+                </div>
+                <!-- Business Units -->
+                <div>
+                    <h4 class="font-label-caps text-label-caps text-primary-fixed font-bold mb-6">Unit Bisnis</h4>
+                    <ul class="space-y-4 font-body-md text-body-md text-surface-variant/80">
+                        <li><a class="hover:text-primary-fixed transition-colors" href="#">Bintang Food</a></li>
+                        <li><a class="hover:text-primary-fixed transition-colors" href="#">Utsman Foundation</a></li>
+                        <li><a class="hover:text-primary-fixed transition-colors" href="#">Kebun Berkah</a></li>
+                        <li><a class="hover:text-primary-fixed transition-colors" href="#">Alfatih</a></li>
+                    </ul>
+                </div>
+                <!-- Contact & Social -->
+                <div>
+                    <h4 class="font-label-caps text-label-caps text-primary-fixed font-bold mb-6">Hubungi Kami</h4>
+                    <ul class="space-y-4 font-body-md text-body-md text-surface-variant/80 mb-8">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-sm mt-1">location_on</span>
+                            <span>Malang, Indonesia</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-sm mt-1">mail</span>
+                            <span>info@emascorp.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-outline-variant/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="font-body-sm text-body-sm text-surface-variant/60">&copy; 2024 EMAS Corp. All rights reserved.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a class="text-surface-variant/60 hover:text-primary-fixed transition-colors font-body-sm text-body-sm"
+                        href="#">Privacy Policy</a>
+                    <a class="text-surface-variant/60 hover:text-primary-fixed transition-colors font-body-sm text-body-sm"
+                        href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Apply Job Modal -->
+    <div id="applyModal" class="fixed inset-0 z-[100] hidden items-center justify-center">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeApplyModal()"></div>
+
+        <!-- Modal Content -->
+        <div
+            class="relative bg-surface w-full max-w-lg rounded-2xl shadow-2xl p-6 md:p-8 m-4 max-h-[90vh] overflow-y-auto fade-in-up">
+            <button onclick="closeApplyModal()"
+                class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+
+            <h3 class="font-headline-md text-2xl text-[#122338] font-bold mb-2">Formulir Lamaran</h3>
+            <p class="font-body-sm text-on-surface-variant mb-6">Silakan lengkapi data diri Anda di bawah ini.</p>
+
+            <form id="applyForm" class="space-y-4">
+                <div>
+                    <label class="block font-label-caps text-xs text-on-surface-variant mb-1"
+                        for="apply-position">Posisi yang Dilamar</label>
+                    <input type="text" id="apply-position" readonly
+                        class="w-full bg-surface-container-lowest border-outline-variant/50 rounded-lg px-4 py-2.5 text-on-surface font-bold focus:ring-0 focus:border-outline-variant/50 cursor-not-allowed">
+                </div>
+
+                <div>
+                    <label class="block font-label-caps text-xs text-on-surface-variant mb-1" for="apply-name">Nama
+                        Lengkap</label>
+                    <input type="text" id="apply-name" required
+                        class="w-full bg-surface border-outline-variant/30 rounded-lg px-4 py-2.5 text-on-surface focus:ring-primary-container focus:border-primary-container transition-colors">
+                </div>
+
+                <div>
+                    <label class="block font-label-caps text-xs text-on-surface-variant mb-1"
+                        for="apply-email">Email</label>
+                    <input type="email" id="apply-email" required
+                        class="w-full bg-surface border-outline-variant/30 rounded-lg px-4 py-2.5 text-on-surface focus:ring-primary-container focus:border-primary-container transition-colors">
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-label-caps text-xs text-on-surface-variant mb-1"
+                            for="apply-gender">Jenis Kelamin</label>
+                        <select id="apply-gender" required
+                            class="w-full bg-surface border-outline-variant/30 rounded-lg px-4 py-2.5 text-on-surface focus:ring-primary-container focus:border-primary-container transition-colors">
+                            <option value="">Pilih</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-label-caps text-xs text-on-surface-variant mb-1" for="apply-phone">No
+                            Telepon</label>
+                        <input type="tel" id="apply-phone" required
+                            class="w-full bg-surface border-outline-variant/30 rounded-lg px-4 py-2.5 text-on-surface focus:ring-primary-container focus:border-primary-container transition-colors">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-label-caps text-xs text-on-surface-variant mb-1"
+                            for="apply-ttl">Tempat, Tanggal Lahir</label>
+                        <input type="text" id="apply-ttl" placeholder="Contoh: Malang, 17 Agustus 1995" required
+                            class="w-full bg-surface border-outline-variant/30 rounded-lg px-4 py-2.5 text-on-surface focus:ring-primary-container focus:border-primary-container transition-colors">
+                    </div>
+                    <div>
+                        <label class="block font-label-caps text-xs text-on-surface-variant mb-1"
+                            for="apply-bloodtype">Golongan Darah</label>
+                        <select id="apply-bloodtype" required
+                            class="w-full bg-surface border-outline-variant/30 rounded-lg px-4 py-2.5 text-on-surface focus:ring-primary-container focus:border-primary-container transition-colors">
+                            <option value="">Pilih</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-label-caps text-xs text-on-surface-variant mb-1" for="apply-address">Alamat
+                        Lengkap</label>
+                    <textarea id="apply-address" rows="2" required
+                        class="w-full bg-surface border-outline-variant/30 rounded-lg px-4 py-2.5 text-on-surface focus:ring-primary-container focus:border-primary-container transition-colors placeholder:text-sm"
+                        placeholder="Masukkan alamat domisili Anda saat ini"></textarea>
+                </div>
+
+                <!-- Dokumen Pendukung -->
+                <div class="border-t border-outline-variant/20 pt-4 mt-2">
+                    <h4 class="font-bold text-sm text-[#122338] mb-3">Dokumen Pendukung <span
+                            class="text-xs text-on-surface-variant font-normal">(Format PDF/Image)</span></h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block font-label-caps text-xs text-on-surface-variant mb-1"
+                                for="apply-cv">CV/Resume *</label>
+                            <input type="file" id="apply-cv" accept=".pdf" required
+                                class="w-full bg-surface border-outline-variant/30 rounded-lg px-3 py-1.5 text-on-surface text-sm focus:ring-primary-container focus:border-primary-container transition-colors file:mr-3 file:py-1.5 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-primary-container/10 file:text-primary-container hover:file:bg-primary-container/20 cursor-pointer">
+                        </div>
+                        <div>
+                            <label class="block font-label-caps text-xs text-on-surface-variant mb-1"
+                                for="apply-ktp">KTP *</label>
+                            <input type="file" id="apply-ktp" accept=".pdf,image/*" required
+                                class="w-full bg-surface border-outline-variant/30 rounded-lg px-3 py-1.5 text-on-surface text-sm focus:ring-primary-container focus:border-primary-container transition-colors file:mr-3 file:py-1.5 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-primary-container/10 file:text-primary-container hover:file:bg-primary-container/20 cursor-pointer">
+                        </div>
+                        <div>
+                            <label class="block font-label-caps text-xs text-on-surface-variant mb-1"
+                                for="apply-kk">Kartu Keluarga *</label>
+                            <input type="file" id="apply-kk" accept=".pdf,image/*" required
+                                class="w-full bg-surface border-outline-variant/30 rounded-lg px-3 py-1.5 text-on-surface text-sm focus:ring-primary-container focus:border-primary-container transition-colors file:mr-3 file:py-1.5 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-primary-container/10 file:text-primary-container hover:file:bg-primary-container/20 cursor-pointer">
+                        </div>
+                        <div>
+                            <label class="block font-label-caps text-xs text-on-surface-variant mb-1"
+                                for="apply-portfolio">Portofolio</label>
+                            <input type="file" id="apply-portfolio" accept=".pdf"
+                                class="w-full bg-surface border-outline-variant/30 rounded-lg px-3 py-1.5 text-on-surface text-sm focus:ring-primary-container focus:border-primary-container transition-colors file:mr-3 file:py-1.5 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-primary-container/10 file:text-primary-container hover:file:bg-primary-container/20 cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex gap-3">
+                    <button type="button" onclick="closeApplyModal()"
+                        class="flex-1 px-6 py-2.5 border border-outline-variant text-on-surface-variant font-label-caps text-sm rounded-DEFAULT hover:bg-surface-variant/10 transition-all duration-200">Batal</button>
+                    <button type="submit"
+                        class="flex-1 px-6 py-2.5 bg-primary-container text-white font-label-caps text-sm rounded-DEFAULT hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">Kirim
+                        Lamaran</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        function openApplyModal(positionTitle) {
+            const modal = document.getElementById('applyModal');
+            const positionInput = document.getElementById('apply-position');
+
+            if (modal && positionInput) {
+                positionInput.value = positionTitle;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+        }
+
+        function closeApplyModal() {
+            const modal = document.getElementById('applyModal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const applyForm = document.getElementById('applyForm');
+            if (applyForm) {
+                applyForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    alert('Terima kasih! Lamaran Anda untuk posisi ' + document.getElementById('apply-position').value + ' berhasil dikirim.');
+                    closeApplyModal();
+                    applyForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
