@@ -6,30 +6,72 @@ document.addEventListener('DOMContentLoaded', () => {
     const defaultJobs = [
         {
             id: 1,
-            title: 'Digital Marketing Specialist',
-            image: 'https://picsum.photos/600/400?random=1',
-            description: 'Kami mencari kandidat yang kreatif dan berpengalaman dalam mengelola kampanye digital serta social media management.',
+            title: 'Project Manager',
+            image: 'img/Career/project-manager.png',
+            description: 'Memimpin dan mengelola proyek secara menyeluruh mulai dari perencanaan, eksekusi, hingga penyelesaian untuk mencapai hasil terbaik sesuai target waktu, kualitas, dan anggaran.',
             active: true
         },
         {
             id: 2,
-            title: 'Graphic Designer',
-            image: 'https://picsum.photos/600/400?random=2',
-            description: 'Bergabunglah dengan tim kreatif kami! Dicari desainer grafis dengan kemampuan visual storytelling yang kuat dan inovatif.',
+            title: 'Digital Marketing Strategist',
+            image: 'img/Career/digital-marketing-strategist.png',
+            description: 'Merancang dan mengeksekusi strategi pemasaran digital yang kreatif, data-driven, dan berdampak untuk meningkatkan brand awareness, leads, dan pertumbuhan bisnis.',
             active: true
         },
         {
             id: 3,
-            title: 'Business Development',
-            image: 'https://picsum.photos/600/400?random=3',
-            description: 'Dicari individu strategis untuk mengembangkan peluang bisnis baru, membangun kemitraan, dan mencapai target pertumbuhan perusahaan.',
+            title: 'Marketing & CS',
+            image: 'img/Career/marketing-cs.png',
+            description: 'Promosi, layanan pelanggan, pertumbuhan bisnis, dan dampak bermakna. Bersama kita ciptakan peluang lebih luas!',
+            active: true
+        },
+        {
+            id: 4,
+            title: 'Accounting',
+            image: 'img/Career/accounting.png',
+            description: 'Bergabunglah bersama kami dan berkontribusi dalam pengelolaan keuangan perusahaan yang akurat, transparan, dan terpercaya.',
+            active: true
+        },
+        {
+            id: 5,
+            title: 'Tax Staff',
+            image: 'img/Career/tax-staff.png',
+            description: 'Bergabunglah dengan tim Finance kami! Dicari individu yang memahami peraturan perpajakan Indonesia dan mampu menghitung serta melaporkan pajak perusahaan.',
+            active: true
+        },
+        {
+            id: 6,
+            title: 'IT Programmer',
+            image: 'img/Career/it-programmer.jpeg',
+            description: 'Bergabunglah bersama kami dan jadi bagian dari ekosistem Sinergi Bisnis Solution untuk menciptakan solusi digital yang berdampak dan bermanfaat bagi banyak orang.',
+            active: true
+        },
+        {
+            id: 7,
+            title: 'SPV Marketing',
+            image: 'img/Career/spv-marketing.jpeg',
+            description: 'Memimpin strategi & kinerja tim marketing untuk mencapai target dan pertumbuhan bisnis.',
+            active: true
+        },
+        {
+            id: 8,
+            title: 'SPV Commercial',
+            image: 'img/Career/spv-commercial.jpeg',
+            description: 'Memimpin strategi & kinerja tim komersial untuk mencapai target dan pertumbuhan bisnis.',
+            active: true
+        },
+        {
+            id: 9,
+            title: 'Desain UI/UX',
+            image: 'img/Career/desain-ui-ux.jpeg',
+            description: 'Bergabunglah bersama kami dan jadi bagian dari ekosistem Sinergi Bisnis Solution untuk menciptakan solusi digital yang berdampak dan bermanfaat bagi banyak orang.',
             active: true
         }
     ];
 
-    // Initialize local storage if empty
+    // Initialize local storage if empty or has less jobs than default
     let jobs = JSON.parse(localStorage.getItem('emas_jobs'));
-    if (!jobs) {
+    if (!jobs || jobs.length < 9) {
         jobs = defaultJobs;
         localStorage.setItem('emas_jobs', JSON.stringify(jobs));
     }
@@ -57,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const jobCard = `
             <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 flex flex-col overflow-hidden fade-in-up hover:shadow-xl transition-all duration-300" style="transition-delay: ${delay}ms;">
-                <img src="${job.image}" alt="Flyer Rekrutmen ${job.title}" class="w-full h-48 object-cover">
+                <img src="${job.image}" alt="Flyer Rekrutmen ${job.title}" class="w-full h-auto object-contain bg-surface-variant/10">
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="font-headline-md text-xl text-[#122338] font-bold mb-2">${job.title}</h3>
                     <p class="font-body-md text-sm text-on-surface-variant flex-grow mb-6">${job.description}</p>
