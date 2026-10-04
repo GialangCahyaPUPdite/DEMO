@@ -66,12 +66,11 @@ Website ini telah dioptimalkan secara komprehensif dengan berbagai fitur interak
    Tata letak (*layout*) otomatis menyesuaikan secara sempurna dengan ukuran layar apa pun. Dari layar *Smartphone*, Tablet, hingga monitor lebar Desktop.
    
 2. **Halaman Galeri Terstruktur (Bento Grid) & Sub-Galeri**
-   Terdapat halaman terpisah khusus galeri (`galeri.html`) yang dikelompokkan dengan sangat rapi ke dalam 5 Pilar Bisnis Utama. Masing-masing pilar kini memiliki halaman dedikasi tersendiri:
-   *   `galeri-food.html` (Food & Beverage)
-   *   `galeri-fashion.html` (Fashion)
-   *   `galeri-financial.html` (Financial Services)
-   *   `galeri-fun-lifestyle.html` (Fun & Lifestyle)
-   *   `galeri-property.html` (Property & Real Estate)
+   Terdapat halaman terpisah khusus galeri (`galeri.html`) dan sub-galerinya yang dikelompokkan dengan sangat rapi. Penataan letak foto kini sepenuhnya menggunakan gaya **Bento Grid (Mosaic Layout)**, di mana foto secara dinamis diatur dalam ukuran yang berbeda-beda (ada yang besar/memanjang dan standar) untuk memberikan tampilan estetis dan modern.
+   *   `galeri-food.html` (Terbagi ke dalam kategori brand: Cuanki Ekspress, Gayon, dan Seblak Asgar)
+   *   `galeri-fashion.html` (Menampilkan koleksi Al-Fatih)
+   *   `galeri-property.html` (Menampilkan dokumentasi proyek Kebun Berkah)
+   *   `galeri-financial.html` & `galeri-fun-lifestyle.html`
 
 3. **Portal Karir (Career Page)**
    Halaman khusus `career.html` yang menampilkan peluang berkarir di EMAS Corp, lengkap dengan daftar lowongan pekerjaan yang tersedia, nilai budaya perusahaan, dan form/tombol aplikasi interaktif.
@@ -95,3 +94,6 @@ Website ini telah dioptimalkan secara komprehensif dengan berbagai fitur interak
 
 9. **Animated Count-up Statistics**
    Bagian metrik kesuksesan perusahaan (Pencapaian) akan melakukan animasi penghitungan angka dinamis (dari 0 ke angka aktual) secara tepat pada saat bagian tersebut masuk ke dalam layar pandang.
+
+10. **Global Lightbox Modal**
+    Seluruh gambar produk dan dokumentasi di halaman Galeri (Galeri Utama, Food, Fashion, dan Property) kini dilengkapi dengan fitur **Lightbox**. Pengunjung cukup mengklik foto mana pun untuk memperbesarnya secara layar penuh (*fullscreen overlay*), lengkap dengan transisi yang sangat mulus dan fitur *click-outside-to-close*.
